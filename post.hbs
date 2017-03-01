@@ -34,7 +34,7 @@ the {{{body}} of the default.hbs template, containing the blog header/footer. --
 
       <footer class="post-footer">
         <section class="share">
-          <h2>Share this post</h2>
+          <h2>Partager</h2>
           <a class="icon icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <span class="entypo-twitter"></span> Twitter</a>
@@ -51,10 +51,10 @@ the {{{body}} of the default.hbs template, containing the blog header/footer. --
       {{!-- Email subscribe form at the bottom of the page --}}
         {{#if @labs.subscribers}}
         <section class="gh-subscribe">
-          <h3 class="gh-subscribe-title">Subscribe to the blog!</h3>
+          <h3 class="gh-subscribe-title">S'abonner !</h3>
           <p>
-            Get the latest posts delivered <b><a href="{{@blog.url}}/subscribe/">right to your inbox</a></b>
-            or subscribe <b><a href="{{@blog.url}}/rss/">via RSS</a></b>
+            Soyez au courant des derniers articles qui sortent <b><a href="{{@blog.url}}/subscribe/">directement par mail</a></b>
+            ou en vos abonnant <b><a href="{{@blog.url}}/rss/">au flux RSS</a></b>
           </p>
         </section>
         {{/if}}
@@ -69,7 +69,7 @@ the {{{body}} of the default.hbs template, containing the blog header/footer. --
   {{#prev_post}}
   <section class="post card">
     <div class="card-body">
-      <h1>Previous post</h1>
+      <h1>Article précédent</h1>
       <a class="read-next-story prev" href="{{url}}">
         <h2>{{title}}</h2>
       </a>
@@ -80,7 +80,7 @@ the {{{body}} of the default.hbs template, containing the blog header/footer. --
   {{#next_post}}
     <section class="post card">
      <div class="card-body">
-       <h1>Next post</h1>
+       <h1>Article suivant</h1>
        <a class="read-next-story" href="{{url}}">
          <h2>{{title}}</h2>
        </a>
