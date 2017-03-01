@@ -1,0 +1,349 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+*{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #3f3f3f;
+}
+
+p {
+  margin-top: 0;
+}
+
+html {
+  background: #EAEAEA;
+}
+
+body {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/*==============================================================================
+/*  CARD
+/*============================================================================*/
+
+.card {
+  display: block;
+  background: #FFFFFF;
+}
+
+.card .card-body,
+.card .card-header {
+  padding: 20px;
+}
+
+.card .card-header {
+  padding-bottom: 0px;
+}
+
+/*==============================================================================
+/*  NAV BAR
+/*============================================================================*/
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  transition: ease 0.2s left;
+  text-align: right;
+}
+
+.nav .blog-owner {
+  padding: 20px;
+}
+
+.nav .blog-owner,
+.nav ul,
+.social {
+  border-bottom: 1px solid #cccccc;
+}
+
+.nav .blog-owner .blog-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.nav .blog-owner .blog-logo img {
+  width: 100%;
+}
+
+.nav .blog-owner .blog-desc .page-title {
+  font-family: 'Oswald', 'Source Sans Pro';
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.nav .blog-owner .blog-desc .page-description {
+  text-align: center;
+  font-weight: normal;
+}
+
+.menu ul {
+  padding: 16px 0;
+  margin: 0
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', 'Source Sans Pro';
+  transition: ease 0.2s background, ease 0.2s padding-right;
+}
+
+.menu ul li a:hover {
+  padding-right: 40px;
+  transition: ease 0.2s background, ease 0.2s padding-right;
+}
+
+.menu ul li a:hover::after {
+  content: " <";
+}
+
+.social {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social .subscribe-button:hover span {
+  color: #A0D4A4;
+}
+
+.social .rss-feed:hover span {
+  color: #ff8d00;
+}
+
+.social .facebook:hover span {
+  color: #4099FF;
+}
+
+.social .twitter:hover span {
+  color: #335795;
+}
+
+.social a:hover span {
+  transition: ease 0.2s color;
+}
+
+.social a span {
+  transition: ease 0.2s color;
+}
+
+.site-footer {
+  font-size: 0.8em;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-footer section,
+.site-footer section a {
+  color: #a5a5a5;
+}
+
+/*==============================================================================
+  SITE WRAPPER
+==============================================================================*/
+.site-wrapper {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.extra-pagination .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*==============================================================================
+  ARTICLE LOOP
+==============================================================================*/
+.post {
+  margin: 20px auto;
+}
+
+.post .post-title {
+  margin: 0;
+  position: relative;
+  font-size: 1.8em;
+}
+
+.post .post-title a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.post .post-title a:hover {
+  text-decoration: underline;
+}
+
+.post-meta .post-tags,
+.post-meta .post-date {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.post .post-meta .post-tags span,
+.post .post-meta .post-tags a,
+.post .post-meta .post-date span,
+.post .post-meta .post-date time {
+  font-size: 0.8em;
+  color: #999999;
+  text-decoration: none;
+}
+
+.post .post-image-wrapper {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  background-size: 100%;
+  overflow: hidden;
+  transition: ease 0.3s box-shadow;
+}
+
+.post .post-image-wrapper:hover {
+  box-shadow: inset 0px 100% rgba(0, 0, 0, 0.3);
+  transition: ease 0.3s box-shadow;
+}
+
+.post-excerpt,
+.post-content {
+  font-size: 1.1em;
+}
+
+/*==============================================================================
+SHARE  BUTTONS
+==============================================================================*/
+
+
+.share .icon {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 2em;
+  background-color: #333333;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+.share .icon span {
+  color: #FFFFFF;
+}
+
+.share .icon.icon-twitter{
+  background-color: #4099FF;
+}
+
+.share .icon.icon-facebook{
+  background-color: #335795;
+}
+
+.share .icon.icon-google{
+  background-color: #D34836;
+}
+
+/*==============================================================================
+POST LAYOUT
+==============================================================================*/
+
+.post img {
+  width: 100%;
+}
+
+.post blockquote {
+  border-left: 3px solid #DDDDDD;
+  padding: 1px 20px;
+  padding-right: 0;
+  font-style: oblique;
+}
+
+.post code {
+  font-family: monospace;
+  background: #EEEEEE;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.post pre code {
+  display: block;
+  background: #383C4A;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FFFFFF;
+  font-family: monospace;
+}
+
+.post hr {
+  border: 2px solid #EEEEEE;
+}
+
+.read-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.read-next section {
+  flex: 1;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.read-next section h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 1em;
+}
+
+.read-next .post {
+  padding: 0;
+}
+/*==============================================================================
+  RESPONSIVE
+==============================================================================*/
+
+@media screen and (min-width: 640px) {
+
+  body {
+    flex-direction: row;
+  }
+
+  .nav {
+    max-width: 250px;
+  }
+
+  .site-wrapper {
+    flex: 1;
+  }
+
+  .share .icon {
+    display: inline;
+  }
+}

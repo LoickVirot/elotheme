@@ -1,0 +1,270 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+* {
+  font-family: "Open-sans", sans-serif;
+  color: #333333;
+}
+
+html {
+  background: #EAEAEA;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+/*==============================================================================
+/*  CARD
+/*============================================================================*/
+
+.card {
+  display: block;
+  background: #FFFFFF;
+}
+
+.card .card-body,
+.card .card-header {
+  padding: 20px;
+}
+
+.card .card-header {
+  padding-bottom: 0px;
+}
+
+/*==============================================================================
+/*  NAV BAR
+/*============================================================================*/
+
+.burger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #383C4A;
+  padding: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: ease 0.2s left;
+}
+
+.burger.active {
+  left: 215px;
+  transition: ease 0.2s left;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 2px;
+  width: 25px;
+  background: #DDDDDD;
+  transition: ease 0.3s all;
+}
+
+.burger span::before {
+  top : -6px;
+}
+
+.burger span::after {
+  bottom: -6px;
+}
+
+.burger.active span {
+  background: rgba(0, 0, 0, 0);
+  transition: ease 0.3s all;
+}
+
+.burger.active span::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: ease 0.3s all;
+}
+
+.burger.active span::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+  transition: ease 0.3s all;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  left: -250px;
+  min-width: 250px;
+  max-width: 250px;
+  padding-top: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transition: ease 0.2s left;
+}
+
+.nav.no-cover {
+  background: #383C4A;
+}
+
+.nav.cover {
+  background-size: auto;
+}
+
+.nav.active {
+  left: 0;
+  transition: ease 0.2s left;
+}
+
+.nav .blog-owner {
+  padding: 20px;
+}
+
+.nav .blog-owner .blog-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.nav .blog-owner .blog-logo img {
+  width: 100%;
+}
+
+.nav .blog-owner .blog-desc .page-title {
+  text-align: center;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.nav .blog-owner .blog-desc .page-description {
+  text-align: center;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.menu ul {
+  padding: 0;
+  border-top: 1px solid #2B2B2C;
+  border-bottom: 1px solid #2B2B2C;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: ease 0.2s background, ease 0.2s padding-left;
+}
+
+.menu ul li a:hover {
+  background: #1C1C1C;
+  padding-left: 30px;
+  transition: ease 0.2s background, ease 0.2s padding-left;
+}
+
+.social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.social a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social a:hover span {
+  color: #ff8d00;
+  transition: ease 0.2s color;
+}
+
+.social a span {
+  color: #FFFFFF;
+  transition: ease 0.2s color;
+}
+
+/*==============================================================================
+  SITE WRAPPER
+==============================================================================*/
+.site-wrapper {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/*==============================================================================
+  ARTICLE LOOP
+==============================================================================*/
+.article {
+  margin: 20px auto;
+}
+
+.article header .post-title {
+  margin: 0;
+  position: relative;
+}
+
+/*.article header .post-title::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #77e0ff;
+  top: 1.5em;
+}*/
+
+.article header .post-title a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.article header .post-title a:hover {
+  text-decoration: underline;
+}
+
+.article header .post-tags span,
+.article header .post-tags a {
+  font-size: 0.8em;
+  color: #999999;
+}
+
+.article header .post-image-wrapper {
+  display: block;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.article header .post-image {
+  width: 100%;
+}
+
+.article .post-meta .author-thumb {
+  width: 30px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 640px) {
+  .site-wrapper {
+    padding: 40px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Elotheme",
+    "description": "The base theme of blog.loickvirot.fr based on Casper.",
+    "version": "0.1",
+    "engines": {
+        "ghost": ">=0.9.0 <1.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Loïck Virot",
+        "email": "loick.virot@gmail.com",
+        "url": "http://loickvirot.fr/"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Personal Blogs"
+        ]
+    },
+}
