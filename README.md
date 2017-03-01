@@ -1,10 +1,9 @@
-# Casper
+# Elotheme
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+A theme for [Ghost](http://github.com/tryghost/ghost/).
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
 
 ## Copyright & License
+Based on [Casper](https://github.com/TryGhost/Casper).
 
-Copyright (c) 2013-2017 Ghost Foundation - Released under the [MIT license](LICENSE).
-
+Loïck Virot &copy; 2017. Released under the [MIT license](LICENSE).
